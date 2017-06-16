@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Blog App</title>
+        <style>
+            .build {
+                text-align: center;
+            }
+
+            .error {
+                color: red;
+                font-style: italic;
+            }
+
+            .newpost {
+                margin-left: 50px;
+            }
+
+            .new_blog {
+                text-align: center;
+            }
+
+            .single {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="/blog">Main Blog Page</a>
+            <a class="newpost" href="/newpost">Add a Blog Entry</a>
+        </nav>
+        {% block content %}
+
+        {% endblock %}
+    </body>
+</html>
